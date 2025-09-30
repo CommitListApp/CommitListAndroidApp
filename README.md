@@ -140,4 +140,12 @@ Build a simple, reliable task manager with a focus timer.
 - Create Projects
 - Share Schedules 
 
+
+
+
+<img width="1130" height="2645" alt="Untitled-2025-04-15-2236" src="https://github.com/user-attachments/assets/1523ea12-fb9e-455b-b95b-25a42b4e9d29" />
+
+
 ---
+
+
