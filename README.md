@@ -19,17 +19,19 @@ Commit List is an intelligent, proactive personal productivity tool designed to 
 
 ---
 
-## License & Legal Notice
+## License
 
 Commit List is open source software released under the
-**[GNU Affero General Public License v3 (AGPL-3.0)](https://www.gnu.org/licenses/agpl-3.0.html)**.
+**[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)**.
 
-You are free to use, study, modify, and redistribute this code under the same license.
-If you publicly host or distribute a modified version, you must make the corresponding source code available to users as required by the AGPL.
+You may use this software in compliance with the License.
 
-**Notes**
-- The **Commit List** name, logo, and related branding are trademarks and **not** covered by the AGPL.
-- You may fork this repository for personal use or contributions.
-- If you release a public or redistributed version, use a different name and logo, and include attribution:
-  *“Based on Commit List — licensed under AGPL-3.0.”*
-- For licensing or trademark questions, please [open an issue](../../issues) in this repository.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+**Trademarks**
+
+The **Commit List** name, logo, and related branding are trademarks and are not covered by the Apache License.
