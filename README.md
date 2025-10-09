@@ -148,4 +148,18 @@ Build a simple, reliable task manager with a focus timer.
 
 ---
 
+# License & Legal Notice
+
+Commit List is open source software released under the  
+**[GNU Affero General Public License v3 (AGPL-3.0)](https://www.gnu.org/licenses/agpl-3.0.html)**.
+
+You are free to use, study, modify, and redistribute this code under the same license.  
+If you publicly host or distribute a modified version, you must make the corresponding source code available to users as required by the AGPL.
+
+**Notes**
+- The **Commit List** name, logo, and related branding are trademarks and **not** covered by the AGPL.
+- You may fork this repository for personal use or contributions.
+- If you release a public or redistributed version, use a different name and logo, and include attribution:  
+  *“Based on Commit List — licensed under AGPL-3.0.”*
+- For licensing or trademark questions, please [open an issue](../../issues) in this repository.
 
