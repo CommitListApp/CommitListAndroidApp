@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 Kaushik Saurabh
+ * SPDX-License-Identifier: Apache-2.0
+ */
 pluginManagement {
     repositories {
         google {
@@ -11,6 +15,7 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -20,4 +25,11 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "CommitListAndrorid"
+
 include(":app")
+
+include(":core:data")
+
+include(":core:domain")
+
+include(":core:database")

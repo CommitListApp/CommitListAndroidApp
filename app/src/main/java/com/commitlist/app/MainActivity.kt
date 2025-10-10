@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2025 Kaushik Saurabh
+ * SPDX-License-Identifier: Apache-2.0
+ */
 package com.commitlist.app
 
 import android.os.Bundle
@@ -20,10 +24,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             CommitListAndroridTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Greeting(name = "Android", modifier = Modifier.padding(innerPadding))
                 }
             }
         }
@@ -32,16 +33,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+    Text(text = "Hello $name!", modifier = modifier)
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    CommitListAndroridTheme {
-        Greeting("Android")
-    }
+    CommitListAndroridTheme { Greeting("Android") }
 }

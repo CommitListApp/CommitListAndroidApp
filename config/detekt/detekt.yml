@@ -1,0 +1,36 @@
+build:
+  maxIssues: 10
+
+# Visit https://detekt.dev/docs/rules/style for more rules
+style:
+  MagicNumber:
+    ignoreNumbers: ['-1', '0', '1', '2', '100', '1000']
+    ignorePropertyDeclaration: true
+    ignoreAnnotation: true
+
+  # Enable auto-correction for the WildcardImport rule.
+  WildcardImport:
+    active: true
+    autoCorrect: true
+
+# Visit https://detekt.dev/docs/rules/naming for more rules
+naming:
+  # Make Detekt's function naming rule compatible with Jetpack Compose.
+  # This allows @Composable functions to be named in PascalCase.
+  FunctionNaming:
+    ignoreAnnotated: ["Composable"]
+
+# Visit https://detekt.dev/docs/rules/complexity for more rules
+complexity:
+  CyclomaticComplexMethod:
+    threshold: 15
+  LongParameterList:
+    functionThreshold: 8
+    constructorThreshold: 8
+  TooManyFunctions:
+    thresholdInFiles: 20
+
+# Visit https://detekt.dev/docs/rules/performance for more rules
+performance:
+  SpreadOperator:
+    active: true
