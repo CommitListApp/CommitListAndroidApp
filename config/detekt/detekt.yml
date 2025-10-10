@@ -1,0 +1,24 @@
+build:
+  maxIssues: 10
+
+# Visit https://detekt.dev/docs/rules/style for more rules
+style:
+  MagicNumber:
+    ignoreNumbers: ['-1', '0', '1', '2', '100', '1000']
+    ignorePropertyDeclaration: true
+    ignoreAnnotation: true
+
+# Visit https://detekt.dev/docs/rules/complexity for more rules
+complexity:
+  CyclomaticComplexMethod:
+    threshold: 15
+  LongParameterList:
+    functionThreshold: 8
+    constructorThreshold: 8
+  TooManyFunctions:
+    thresholdInFiles: 20
+
+# Visit https://detekt.dev/docs/rules/performance for more rules
+performance:
+  SpreadOperator:
+    active: true
