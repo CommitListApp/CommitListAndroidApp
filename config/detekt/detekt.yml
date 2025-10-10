@@ -8,6 +8,18 @@ style:
     ignorePropertyDeclaration: true
     ignoreAnnotation: true
 
+  # Enable auto-correction for the WildcardImport rule.
+  WildcardImport:
+    active: true
+    autoCorrect: true
+
+# Visit https://detekt.dev/docs/rules/naming for more rules
+naming:
+  # Make Detekt's function naming rule compatible with Jetpack Compose.
+  # This allows @Composable functions to be named in PascalCase.
+  FunctionNaming:
+    ignoreAnnotated: ["Composable"]
+
 # Visit https://detekt.dev/docs/rules/complexity for more rules
 complexity:
   CyclomaticComplexMethod:
