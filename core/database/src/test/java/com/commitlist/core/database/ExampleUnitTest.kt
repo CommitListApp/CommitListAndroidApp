@@ -4,7 +4,7 @@
  */
 package com.commitlist.core.database
 
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
 /**
