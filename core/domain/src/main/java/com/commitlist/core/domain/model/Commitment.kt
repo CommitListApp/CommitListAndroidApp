@@ -4,4 +4,12 @@
  */
 package com.commitlist.core.domain.model
 
-data class Commitment(val id: String)
+import kotlin.time.Duration
+
+data class Commitment(
+    val id: String,
+    val title: String,
+    val description: String,
+    val approximateTimeCommitment: Duration = Duration.INFINITE,
+    val scheduleType: ScheduleType = ScheduleType.NONE,
+)
