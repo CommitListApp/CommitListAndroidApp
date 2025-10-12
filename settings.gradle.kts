@@ -33,3 +33,5 @@ include(":core:data")
 include(":core:domain")
 
 include(":core:database")
+
+include(":libs:kotlin-bits")
