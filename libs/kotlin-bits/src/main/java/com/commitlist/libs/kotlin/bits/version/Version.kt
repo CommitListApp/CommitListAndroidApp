@@ -1,6 +1,10 @@
+/*
+ * Copyright (C) 2025 Kaushik Saurabh
+ * SPDX-License-Identifier: Apache-2.0
+ */
 package com.commitlist.libs.kotlin.bits.version
 
-data class Version(val major: Int, val minor: Int, val patch: Int = 0): Comparable<Version> {
+data class Version(val major: Int, val minor: Int, val patch: Int = 0) : Comparable<Version> {
     override fun compareTo(other: Version): Int {
         return if (major == other.major) {
             if (minor == other.minor) {
@@ -18,13 +22,15 @@ data class Version(val major: Int, val minor: Int, val patch: Int = 0): Comparab
     }
 
     companion object {
+        private const val MAX_VERSION_SPLIT = 3
+
         fun fromString(version: String): Version {
-             val split = version.split(".")
-            require(split.size == 3)
+            val split = version.split(".")
+            require(split.size == MAX_VERSION_SPLIT)
             return Version(
                 major = split[0].toInt(),
                 minor = split[1].toInt(),
-                patch = split[2].toInt()
+                patch = split[2].toInt(),
             )
         }
 

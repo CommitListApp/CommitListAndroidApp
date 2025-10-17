@@ -4,18 +4,18 @@
  */
 package com.commitlist.libs.kotlin.bits.version
 
+import kotlin.math.sign
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
-import kotlin.math.sign
 
 @RunWith(Parameterized::class)
-class VersionComparisonTest(
+class VersionTest(
     private val v1: Version,
     private val v2: Version,
     private val expected: Int,
-    private val message: String
+    private val message: String,
 ) {
 
     companion object {
@@ -36,7 +36,7 @@ class VersionComparisonTest(
 
                 // Equal
                 arrayOf(Version(1, 2, 3), Version(1, 2, 3), 0, "v1 == v2 with all parts specified"),
-                arrayOf(Version(1, 2), Version(1, 2, 0), 0, "v1 == v2 when patch is default")
+                arrayOf(Version(1, 2), Version(1, 2, 0), 0, "v1 == v2 when patch is default"),
             )
         }
     }
@@ -48,4 +48,3 @@ class VersionComparisonTest(
         assertEquals(message, expected, actual)
     }
 }
-
