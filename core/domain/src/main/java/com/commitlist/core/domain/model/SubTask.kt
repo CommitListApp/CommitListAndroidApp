@@ -4,10 +4,12 @@
  */
 package com.commitlist.core.domain.model
 
+import com.commitlist.libs.kotlin.bits.id.Id
 import com.commitlist.libs.kotlin.bits.version.Version
 
 data class SubTask(
-    val id: String,
+    val id: Id,
+    val commitmentId: Id,
     val description: String,
     val scheduleType: ScheduleType,
     val version: Version,

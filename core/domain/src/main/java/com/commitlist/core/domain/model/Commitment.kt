@@ -4,11 +4,12 @@
  */
 package com.commitlist.core.domain.model
 
+import com.commitlist.libs.kotlin.bits.id.Id
 import com.commitlist.libs.kotlin.bits.version.Version
 import kotlin.time.Duration
 
 data class Commitment(
-    val id: String,
+    val id: Id,
     val title: String,
     val description: String,
     val approximateTimeCommitment: Duration = Duration.INFINITE,
