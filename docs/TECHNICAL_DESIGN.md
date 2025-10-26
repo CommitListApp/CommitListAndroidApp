@@ -101,3 +101,31 @@ DataStore (Local DB)
 1. How to handle traveling - timezone changes ?
 2. How to handle commitments - that failed ?
 3. Commitment vs Sub Tasks ?
+
+#### Non Happy Path - User Behavior
+1. User skips a specific date (e.g. “skip tomorrow’s workout”)
+2. User wants to reschedule one occurrence (e.g. “move tomorrow’s workout to the next day”)
+3. User changes recurrence pattern mid-way (e.g. daily → weekdays)
+4. User edits commitment start date backward in time
+5. User completes commitment early (e.g. “finished all work before due date”)
+6. User completes commitment late
+7. User deletes tomorrow’s commitment entirely
+8. Daylight savings / time zone shifts
+9. User pauses a repeating commitment
+10. User deletes a subtask only for tomorrow
+11. User deletes a subtask permanently
+12. Subtask starts before parent commitment date
+13. Subtask ends after parent commitment date
+14. User promotes a subtask into a separate commitment
+15. User adds a subtask for one occurrence only
+16. User modifies title/description of a commitment
+17. User stops Pomodoro early
+18. User pauses mid-Pomodoro
+19. User exceeds estimated duration
+20. User works on task not scheduled for today
+21. User works on future subtask early
+22. User partially completes commitment (e.g. 30 min of 60)
+23. Duplicating a commitment
+24. User deletes a commitment with logs
+25. User deletes all data
+26. User removes themselves from shared group
